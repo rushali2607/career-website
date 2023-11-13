@@ -11,13 +11,6 @@ JOBS = [{
   
         },
         {
-          'id': 1,
-          'title' : 'Data Analyst',
-          'location' : 'Bengaluru India',
-          'salary' : 'Rs 1,50,000'
-
-        },
-        {
           'id': 2,
           'title' : 'Frontend Engineer',
           'location' : 'Remote',

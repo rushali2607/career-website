@@ -15,15 +15,22 @@
     
   </head>
   <body>
+    {% include 'nav.html' %}
+    <img  class = "img-fluid" id ="banner"  src="https://career-website.rushali2607.repl.co/static/banner1.jpg">
     <div class="container">
     <h1 class ="text-center mt-4 mb-4" >{{company_name}} Carrers</h1>
     <hr>
       <div >
-    <img  class = "img-fluid" id ="banner"  src="https://career-website.rushali2607.repl.co/static/banner1.jpg">
+    <!-- <img  class = "img-fluid" id ="banner"  src="https://career-website.rushali2607.repl.co/static/banner1.jpg"> -->
       </div>
     <h2 class="text-center mt-2 mb-4">About Jobophia</h2>
-    <p class="lead" >Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi.</p>
+      <div class="row">
+    <p class="lead text-start col-md-7" >Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi.</p>
+      <img class="img-fluid d-none d-md-block col-md-5" style ="border-radius:2rem; padding-bottom:2rem;" src="https://career-website.rushali2607.repl.co/static/people.jpg">
+      </div >
     <h2 class ="text-center" >Job Openings</h2>
+      <hr>
+      <hr>
     <div >
       {% for job in jobs %}
           {% include 'jobitem.html' %}
@@ -31,8 +38,8 @@
       
     </div>
       <div class="text-center">
-    <button class="btn btn-primary btn-lg ">Contact Us</button>
-        <p class="mt-4">Copyright 2023, Jobophia</p>
+    <a href ="mailto:hello@Jobophiya.ai?subject=Question%20about%20Job&body=My%20Name%20%3CYour%20Name%3E%0D%0A%0D%0AMy%20Question%20%3CEnter%20Your%20Question%3E%0D%0A%0D%0A" class="btn btn-primary btn-lg ">Contact Us</a>
+        <p class="mt-4 text-center text-muted">&copy;Copyright 2023, Jobophia</p>
       </div>
       </div>
   </body>
